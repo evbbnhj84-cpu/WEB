@@ -1,0 +1,70 @@
+
+.container {
+  width: 960px;
+  max-width: 100%;
+  min-height: 400px;
+  margin: 0 auto;
+  border: 3px dashed orange;
+}
+
+/* li : 블록요소(기본값) */
+/* display: block: */
+li {
+  /* display: inline; */    /* width, height 적용 ❌ */
+  display: inline-block;    /* width, height 적용 ⭕ */
+  /* inline       : 크기 ❌, 여백 ⭕, 한줄 나란히 배치 */
+  /* block        : 크기 ⭕, 여백 ⭕, 세로로 쌓여서 배치 */
+  /* inlie-block  : 크기 ⭕, 여백 ⭕, 한줄 나란히 배치 */
+  width: 150px;
+  height: 50px;
+  padding: 10px 20px;
+  line-height: 50px;
+  border: 1px solid #000;
+  text-align: center;
+  list-style-type: none;
+}
+
+li:hover { background-color: #ddd; cursor: pointer; }
+
+/* 화면에 보이지 않게 지정 */
+.none { display: none; }
+.hidden { visibility: hidden; }
+.transparent { opacity: 0; }
+
+
+/* Grid 레이아웃 */
+.grid-container {
+  display: grid;
+  /* 
+    grid-template-columns
+    - Grid 레이아웃의 열의 크기를 지정하는 속성
+  */
+  /* grid-template-columns: 320px 320px 320px; */
+  /* grid-template-columns: 320px repeat(2, auto); */
+  grid-template-columns: repeat(3, auto);
+  padding: 10px;
+  background-color: royalblue;
+}
+
+.grid-container .item {
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Flex 레이아웃 */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  row-gap: 100px;
+  column-gap: 50px;
+}
+
+.flex-container .item {
+  width: 200px;
+}
+
+.item img {
+  width: 100%;
+}

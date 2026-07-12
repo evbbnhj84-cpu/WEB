@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 10px solid black;
+    /* overflow: hidden; */
+}
+
+.slide {
+    width: 800px;
+}
+
+.slide .item {
+    position: absolute;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+
+.slide img {
+    width: 800px;
+    height: 400px;
+}
+
+/* 첫번째 슬라이드만 제외하고 나머지는 투명 */
+.slide .item:not(:first-of-type) {
+    opacity: 0;
+}
+
+.slide .item:nth-last-of-type(1) {
+    animation-name: slide1;
+}
+.slide .item:nth-last-of-type(2) {
+    animation-name: slide2;
+}
+.slide .item:nth-last-of-type(3) {
+    animation-name: slide3;
+}
+
+@keyframes slide1 {
+    33.333% { opacity: 1; }
+    66.666% { opacity: 0; }
+    100% { opacity: 0;}
+}
+
+@keyframes slide2 {
+    33.333% { opacity: 0; }
+    66.666% { opacity: 1; }
+    100% { opacity: 0;}
+}
+
+@keyframes slide3 {
+    33.333% { opacity: 0; }
+    66.666% { opacity: 0; }
+    100% { opacity: 1;}
+}
