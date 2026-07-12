@@ -49,3 +49,21 @@
 .between { justify-content: space-between; }
 .around { justify-content: space-around; }
 .evenly { justify-content: space-evenly; }
+
+/* 교차축 */
+.coross {height: 600px;}
+
+/* align-content */
+.content-stretch { align-content: stretch; }
+
+/* 
+ stertch
+ -적용된 item 의 width/heigth 가 auto 이어야 적용된다
+*/
+.content-stretch .item { height: auto; }
+
+.content-center { align-content: center; }
+.content-start { align-content: start; }
+.content-end { align-content: end; }
+.content-between { align-content: space-between; }
+.content-around { align-content: space-around; }
