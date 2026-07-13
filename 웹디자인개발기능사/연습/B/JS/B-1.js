@@ -113,13 +113,13 @@ $("#btn-notice").on("click", function() {
     $(this).parent().addClass("active")
 })
 $("#btn-gallery").on("click", function() {
-    $("#content-notice").hide()
+    $("#content-notice").hode()
     $("#content-gallery").show()
     $(".menu-item").removeClass("active")
     $(this).parent().addClass("active")
 })
 
-// 레이어 팝업
+// 레이어 파업
 $(".btn-modal").on("click", function() {
     $("#modal").show();
 });
@@ -127,5 +127,4 @@ $(".btn-modal").on("click", function() {
 $(".close").on("click", function() {
     $("#modal").hide();
 });
-
 })
