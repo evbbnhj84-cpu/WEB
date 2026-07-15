@@ -122,7 +122,7 @@ $(function() {
     });
 
     $(".close").on("click", function() {
-        $("#modal").hode();
+        $("#modal").hide();
     });
     
 })
