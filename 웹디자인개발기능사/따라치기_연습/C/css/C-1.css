@@ -65,7 +65,7 @@ header nav {
 header nav .main-menu {
     display: flex;
     flex-direction: column;
-    justify-self: center; /* 왜? display 에서는 flex 를 주고, 갑자기 grid 의 정렬방식을 사용하는걸까? */
+    justify-self: center;
     align-items: center;
 }
 
@@ -271,7 +271,7 @@ footer .inner {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-} /* 왜 이 속성을 했을때 화면에서 저런식으로 변화하는건지 연결 못짓는중....  블록 정렬 - 세로 표기 - 균등 분배 ??????????? */
+}
 
 
 
